@@ -7,6 +7,8 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+JavaVM* jvm;
 /*
  * Class:     com_liu_orbslam2android_nativefunc_OrbNdkHelper
  * Method:    initSystemWithParameters
@@ -22,14 +24,6 @@ JNIEXPORT void JNICALL Java_com_liu_orbslam2android_nativefunc_OrbNdkHelper_init
  */
 JNIEXPORT jintArray JNICALL Java_com_liu_orbslam2android_nativefunc_OrbNdkHelper_startCurrentORB
   (JNIEnv *, jclass, jdouble, jintArray, jint, jint);
-
-/*
- * Class:     com_liu_orbslam2android_nativefunc_OrbNdkHelper
- * Method:    startCurrentORBForCamera
- * Signature: (DJII)[I
- */
-JNIEXPORT jintArray JNICALL Java_com_liu_orbslam2android_nativefunc_OrbNdkHelper_startCurrentORBForCamera
-  (JNIEnv *, jclass, jdouble, jlong, jint, jint);
 
 /*
  * Class:     com_liu_orbslam2android_nativefunc_OrbNdkHelper
@@ -54,6 +48,15 @@ JNIEXPORT void JNICALL Java_com_liu_orbslam2android_nativefunc_OrbNdkHelper_gles
  */
 JNIEXPORT void JNICALL Java_com_liu_orbslam2android_nativefunc_OrbNdkHelper_glesResize
   (JNIEnv *, jclass, jint, jint);
+
+/*
+ * Class:     com_liu_orbslam2android_nativefunc_OrbNdkHelper
+ * Method:    startCurrentORBForCamera
+ * Signature: (DJII)[I
+ */
+JNIEXPORT jintArray JNICALL Java_com_liu_orbslam2android_nativefunc_OrbNdkHelper_startCurrentORBForCamera
+  (JNIEnv *, jclass, jdouble, jlong, jint, jint);
+
 
 #ifdef __cplusplus
 }

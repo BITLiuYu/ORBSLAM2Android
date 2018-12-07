@@ -196,7 +196,7 @@ public class ORBSLAMForCameraActivity extends Activity implements
 		super.onResume();
 		mGLSurfaceView.onResume();
 		
-		OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_2_4_3, this, mLoaderCallback);
+		OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_2_4_9, this, mLoaderCallback);
 	}
 
 	

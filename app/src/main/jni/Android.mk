@@ -222,8 +222,8 @@ include $(OPENCV_MK_PATH)
 endif 
 LOCAL_MODULE := ORB_SLAM2_EXCUTOR
 LOCAL_C_INCLUDES+=$(LOCAL_PATH)/Thirdparty/eigen3
-LOCAL_C_INCLUDES+=orb_slam2_android_nativefunc_OrbNdkHelper.h
-LOCAL_SRC_FILES+=orb_slam2_android_nativefunc_OrbNdkHelper.cpp
+LOCAL_C_INCLUDES+=com_liu_orbslam2android_nativefunc_OrbNdkHelper.h
+LOCAL_SRC_FILES+=com_liu_orbslam2android_nativefunc_OrbNdkHelper.cpp
 LOCAL_SHARED_LIBRARIES+=ORB_SLAM2
 LOCAL_SHARED_LIBRARIES+=g2o
 LOCAL_LDLIBS += -llog -landroid -lEGL -lGLESv1_CM  
